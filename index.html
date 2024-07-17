@@ -86,7 +86,7 @@
                         possimus consectetur vel corporis quasi.</p>
                     <a href="#">Learn more</a>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -98,8 +98,10 @@
                 <div class="work">
                     <img src="work-1.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app connects you to the talented people around world.</p>
+                        <h3>Question Bank Management System</h3>
+                        <p>This web app helps in generating question paper according to the University rules
+                            and regulation.
+                        </p>
                         <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -107,15 +109,22 @@
                     <img src="work-2.png">
                     <div class="layer">
                         <h3>Online Tic-toe game</h3>
-                        <p>This app connects you to the talented people around world.</p>
+                        <p>This online tic-tac-toe game is a digital version of the classic 3x3 grid game where two
+                            players take turns marking spaces with Xs and Os. The first player to align three of their
+                            marks horizontally, vertically, or diagonally wins.</p>
                         <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="work-3.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app connects you to the talented people around world.</p>
+                        <h3>To-do list</h3>
+                        <p>
+                            A to-do list is an organizational tool that helps users manage tasks and responsibilities.
+                            It typically consists of a list of items that need to be completed, which can be checked off
+                            or marked as done once finished. To-do lists can be used for personal, educational, or
+                            professional purposes, helping users prioritize and keep track of their obligations
+                            effectively.</p>
                         <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -151,7 +160,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright <i class="fa-regular fa-copyright"></i>  Nischal.Made with <i class="fa-solid fa-heart"></i> easy tutorial</p>
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Nischal.Made with <i class="fa-solid fa-heart"></i>
+                easy tutorial</p>
         </div>
     </div>
     <script>
@@ -169,32 +179,32 @@
         }
     </script>
     <script>
-        var sidemenu=document.getElementById('sidemenu')
-        function openmenu(){
-            sidemenu.style.right='0'
+        var sidemenu = document.getElementById('sidemenu')
+        function openmenu() {
+            sidemenu.style.right = '0'
         }
-        function closemenu(){
-            sidemenu.style.right='-200px'
+        function closemenu() {
+            sidemenu.style.right = '-200px'
         }
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxtgHa51Z1EgVmdyahmr4RaOaMm9bMY0yG57zMR_yXQy6hVkgIobDOq5uanw80hATf4VA/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById('msg')
+        const msg = document.getElementById('msg')
 
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML='Message sent succesfully'
-                setTimeout(function (){
-                    msg.innerHTML=''
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent succesfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
